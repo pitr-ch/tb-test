@@ -57,6 +57,7 @@ GEM
       torquebox-transactions (= 2.3.0)
     torquebox-configure (2.3.0-java)
       blankslate (= 2.1.2.4)
+    torquebox-console (0.2.4)
     torquebox-core (2.3.0-java)
     torquebox-messaging (2.3.0-java)
       edn (= 1.0.0)
@@ -84,6 +85,8 @@ DEPENDENCIES
   activerecord
   activerecord-jdbcpostgresql-adapter
   cuba
+  jdbc-postgres
   pry
   torquebox (= 2.3.0)
+  torquebox-console
   torquebox-server (= 2.3.0)

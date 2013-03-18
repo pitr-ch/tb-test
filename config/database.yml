@@ -1,0 +1,15 @@
+development:
+  adapter: jdbcpostgresql
+  database: kvizer-ci
+  xa: true
+  user: root
+  host: localhost
+  encoding: utf8
+
+production:
+  adapter: jdbcpostgresql
+  database: kvizer-ci
+  xa: true
+  user: root
+  host: localhost
+  encoding: utf8

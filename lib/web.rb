@@ -3,19 +3,14 @@ require 'bundler/setup'
 require 'cuba'
 require 'active_record'
 require 'torquebox'
+require 'pry'
 
 #require 'torquebox/transactions'
 #require 'torquebox/active_record_adapters'
 
-
-ActiveRecord::Base.establish_connection(
-    :adapter  => 'jdbcpostgresql',
-    :database => 'kvizer-ci',
-    :xa       => true,
-    :user     => 'root',
-    :host     => 'localhost',
-    :encoding => 'utf8'
-)
+require 'yaml'
+config = YAML.load_file('config/database.yml')
+ActiveRecord::Base.establish_connection(config['development'])
 
 class User < ActiveRecord::Base
 end
