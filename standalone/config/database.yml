@@ -7,8 +7,8 @@ development:
   encoding: utf8
 
 production:
-  adapter: jdbcpostgresql
   database: kvizer-ci
+  adapter: jdbcpostgresql
   xa: true
   user: root
   host: localhost

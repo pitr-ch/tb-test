@@ -5,7 +5,7 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'activerecord-jdbcpostgresql-adapter'
+gem 'activerecord-jdbcpostgresql-adapter', '1.2.2.1' # 1.2.5+ have a bug
 gem 'jdbc-postgres'
 
 
@@ -41,5 +41,3 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem "torquebox", "2.3.0"
-
-require 'jdbc/postgres'; Jdbc::Postgres.load_driver

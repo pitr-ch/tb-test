@@ -11,8 +11,6 @@ class UsersController < ApplicationController
         queue.publish 'asd'
         cache.put 'time', Time.now
 
-        #str << "before rollback messages: #{queue.count_messages} users: #{User.count} cache: #{cache.get('time').inspect}<br/>"
-
         raise 'rollback'
       end
     rescue => e

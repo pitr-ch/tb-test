@@ -4,15 +4,13 @@ gem 'pry'
 
 gem 'cuba'
 gem 'activerecord'
-gem 'activerecord-jdbcpostgresql-adapter'
+gem 'activerecord-jdbcpostgresql-adapter', '1.2.2.1'
 gem 'jdbc-postgres'
 #gem 'activerecord-jdbcmysql-adapter'
 #gem 'jdbc-mysql'
 
 
-gem 'torquebox', '= 2.3.0'
-gem 'torquebox-server', '= 2.3.0'
-gem 'torquebox-console'
+gem 'torquebox', '2.3.0'
+gem 'torquebox-server', '2.3.0'
+#gem 'torquebox-console'
 
-# it does not work in torquebox_init :/
-require 'jdbc/postgres'; Jdbc::Postgres.load_driver

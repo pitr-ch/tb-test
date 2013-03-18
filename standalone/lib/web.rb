@@ -9,10 +9,11 @@ require 'pry'
 
 require 'yaml'
 config = YAML.load_file('config/database.yml')
-ActiveRecord::Base.establish_connection(config['development'])
 
 class User < ActiveRecord::Base
 end
+
+User.establish_connection(config['development'])
 
 Cuba.define do
 
