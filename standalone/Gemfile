@@ -1,8 +1,5 @@
 source 'https://rubygems.org'
 
-require 'jdbc/postgres'
-Jdbc::Postgres.load_driver
-
 gem 'pry'
 
 gem 'cuba'
@@ -17,3 +14,5 @@ gem 'torquebox', '= 2.3.0'
 gem 'torquebox-server', '= 2.3.0'
 gem 'torquebox-console'
 
+# it does not work in torquebox_init :/
+require 'jdbc/postgres'; Jdbc::Postgres.load_driver

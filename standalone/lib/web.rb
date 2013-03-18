@@ -1,4 +1,3 @@
-require 'bundler/setup'
 
 require 'cuba'
 require 'active_record'

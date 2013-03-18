@@ -4,7 +4,7 @@ TorqueBox.configure do
     version '1.9'
     #compile_mode 'jit'
     debug false
-    #interactive true
+    interactive true
     #profile_api false
   end
 

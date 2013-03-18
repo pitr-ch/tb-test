@@ -1,6 +1,6 @@
 development:
-  adapter: jdbcpostgresql
   database: kvizer-ci
+  adapter: jdbcpostgresql
   xa: true
   user: root
   host: localhost
