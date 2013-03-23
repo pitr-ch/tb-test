@@ -3,6 +3,7 @@ development:
   adapter: jdbcpostgresql
   xa: true
   user: root
+  username: root
   host: localhost
   encoding: utf8
 
@@ -11,5 +12,6 @@ production:
   adapter: jdbcpostgresql
   xa: true
   user: root
+  username: root
   host: localhost
   encoding: utf8
